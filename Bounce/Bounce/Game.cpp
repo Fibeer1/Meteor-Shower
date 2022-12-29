@@ -203,7 +203,7 @@ void Game::updateText()
 		ss << "Points: " << this->points << "\n" << "Health: " << this->health << "\n";
 		this->uiText.setString(ss.str());
 	}
-	else if (this->endGame)
+	else
 	{
 		if (hasWonGame)
 		{
