@@ -274,10 +274,14 @@ void Game::updateEnemies()
 			deleted = true;
 			hitSound.play();
 			health--;
-			if (points > 5)
+			if (points < 5)
+			{
+				points = 0;
+			}
+			else
 			{
 				points -= 5;
-			}			
+			}
 		}
 		if (deleted)
 		{
